@@ -26,6 +26,7 @@ jobs:
         touch .env
         echo MNEMONIC=${{ secrets.MNEMONIC }} >> .env
         echo PUBLIC_KEY=${{ secrets.PUBLIC_KEY }} >> .env
+        echo PRIVATE_KEY=${{ secrets.PRIVATE_KEY }} >> .env
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
